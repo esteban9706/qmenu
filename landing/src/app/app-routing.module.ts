@@ -4,13 +4,15 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home-component', pathMatch: 'full' },
-  { path: 'home-component', component: HomeComponent },
-  { path: 'contact-component', component: ContactComponent },
-  { path: 'pricing-component', component: PricingComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'coming-soon', component: ComingSoonComponent },
+  { path: 'pricing', component: PricingComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
