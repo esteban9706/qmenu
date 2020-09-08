@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-6 col-sm-3 logo-column">
-                    <a [routerLink]="['/home-component']" routerLinkActive="router-link-active" class="logo">
+                    <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="logo">
                         <img src="assets/img/waitqr-logo.png" alt="logo">
                     </a>
                 </div>
@@ -17,14 +17,13 @@
                         <div class=" nav-item header-social">
                             <a href="#" class="fa fa-facebook"></a>
                             <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-github"></a>
                         </div>
                     </div>
                     <nav id="menu" class=" nav-item d-none d-lg-block">
                         <ul>
-                            <li class="current-menu-item nav-item"><a [routerLink]="['/home-component']" routerLinkActive="router-link-active">Home</a></li>
-                            <li class="nav-item"><a [routerLink]="['/pricing-component']" routerLinkActive="router-link-active" >Pricing</a></li>
-                            <li class="nav-item"><a [routerLink]="['/contact-component']" routerLinkActive="router-link-active" >Contact</a></li>
+                            <li class="current-menu-item nav-item"><a [routerLink]="['/home']" routerLinkActive="router-link-active">Inicio</a></li>
+                            <li class="nav-item"><a [routerLink]="['/coming-soon']" routerLinkActive="router-link-active" >Planes</a></li>
+                            <li class="nav-item"><a [routerLink]="['/contact']" routerLinkActive="router-link-active" >Contacto</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -39,53 +38,11 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="slide-content">
-                                <h2>Un Menu Digital para ti</h2>
-                                <p>Ofrecemos un servicio integral para tu restaurante</p>
+                                <h2>Una experiencia contactless para tus comensales y analítica para tu negocio</h2>
+                                <p>Ofrecemos un servicio integral, que te da control en tiempo real de tu restaurante y sus operaciones</p>
                                 <div class="slide-btn">
-                                    <a href="#" class="button">Más información</a>
-                                    <a href="#" class="button-2">Live Preview</a>
+                                    <a [routerLink]="['/contact-component']" routerLinkActive="router-link-active" >Contacto</a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="single-slide" style="background-image: url(assets/img/slide2.jpg)">
-            <div class="inner">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6 text-center">
-                            <div class="slide-content">
-                                <h2>We Are Digital Product Design Agency.</h2>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                <div class="slide-btn">
-                                    <a href="#" class="button">Learn More</a>
-                                    <a href="#" class="button-2">Live Preview</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="single-slide" style="background-image: url(assets/img/slide3.jpg)">
-            <div class="inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="slide-content">
-                                <h2>We Are Digital Product Design Agency.</h2>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                <div class="slide-btn">
-                                    <a href="#" class="button">Learn More</a>
-                                    <a href="#" class="button-2">Live Preview</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 text-center">
-                            <div class="inner embed-responsive embed-responsive-16by9" data-margin="25px 0 0">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/GYtUAYYDPo0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -127,10 +84,10 @@
 </div>
 </div><div class="service-area bg2 sp">
 <div class="container">
-    <div class="section-title">
-        <h2>Nuestros Servicios</h2>
-        <p>Con QMENU podrás acceder a todas sus funcionalidades gratis</p>
-    </div>
+    <h1 class="text-center">
+        Nuestros Servicios
+        <small class="text-muted">Diseñamos la experiencia contactless en tu negocio</small>
+      </h1>
     <div class="row">
         <div class="col-lg-4 col-md-6 single-service">
             <div class="inner">
@@ -138,10 +95,10 @@
                     <div class="icon">
                         <i class="fa fa-film"></i>
                     </div>
-                    <h4>Menu QR</h4>
+                    <h4>Creacion de assets qr (servilleteros, pegatinas, letreros)</h4>
                 </div>
                 <div class="content">
-                    <p>Obtendrás un Código QR para mostrar en tu negocio con tu menu</p>
+                    <p>Te proporcionamos tus códigos QR personalizados en formato físico y digita</p>
                 </div>
             </div>
         </div>
@@ -151,10 +108,10 @@
                     <div class="icon">
                         <i class="fa fa-camera"></i>
                     </div>
-                    <h4>Sistema de Reservas Inteligente</h4>
+                    <h4>Menu Digital</h4>
                 </div>
                 <div class="content">
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                    <p>Te ayudamos a crear tu menu digital y te enseñamos a controlarlo en tiempo real</p>
                 </div>
             </div>
         </div>
@@ -164,23 +121,30 @@
                     <div class="icon">
                         <i class="fa fa-music"></i>
                     </div>
-                    <h4>Integración con Redes Sociales</h4>
+                    <h4>Analítica</h4>
                 </div>
                 <div class="content">
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                    <p>Te damos información clave sobre tu negocio y tus operaciones tanto al minuto como a gran escala</p>
                 </div>
             </div>
         </div>
+<div class="container">
+    <h1>
+        Más servicios por venir
+        <small class="text-muted">Estamos preparando más funciones</small>
+      </h1>
+</div>
+        
         <div class="col-lg-4 col-md-6 single-service">
             <div class="inner">
                 <div class="title">
                     <div class="icon">
                         <i class="fa fa-bullhorn"></i>
                     </div>
-                    <h4>Marketing Insights</h4>
+                    <h4>Sistema de promociones y descuentos</h4>
                 </div>
                 <div class="content">
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                    <p>Utilizaremos los insights de tu negocio para proporcionarte las mejores ideas</p>
                 </div>
             </div>
         </div>
@@ -190,10 +154,10 @@
                     <div class="icon">
                         <i class="fa fa-magic"></i>
                     </div>
-                    <h4>Sistema de Descuentos y Cupones</h4>
+                    <h4>Integración con métodos de pago en línea</h4>
                 </div>
                 <div class="content">
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                    <p>Pagos directamente desde la app, sin complicaciones</p>
                 </div>
             </div>
         </div>
@@ -203,10 +167,10 @@
                     <div class="icon">
                         <i class="fa fa-bar-chart"></i>
                     </div>
-                    <h4>Presentation</h4>
+                    <h4>División de cuentas</h4>
                 </div>
                 <div class="content">
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                    <p>No más problemas para pagar en mesas largas</p>
                 </div>
             </div>
         </div>
@@ -215,8 +179,8 @@
 </div><div class="portfolio-area sp">
 <div class="container">
     <div class="section-title">
-        <h2>Mock</h2>
-        <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+        <h2>Ordenar nunca había sido tan fácil</h2>
+        <p>Los comensales amarán tu negocio</p>
     </div>
     <div class="row">
         <div class="single-portfolio col-md-4">
@@ -225,13 +189,13 @@
                     <img src="assets/img/portfolio1.jpg" alt="portfolio-image">
                     <div class="hover-content">
                         <div>
-                            <a href="#" class="button">View Case Study</a>
+                            <a href="#" class="button">Paso 1: Llegar y escanear qr</a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-content">
-                    <a href="#"><h3>The Back Chiropractor</h3></a>
-                    <span>Ceramics, Design</span>
+                    <a href="#"><h3>Ve a tu restaurante favorito</h3></a>
+                    <span>tranquilo, no tendrás que esperar para ordenar</span>
                 </div>
             </div>
         </div>
@@ -241,13 +205,13 @@
                     <img src="assets/img/portfolio2.jpg" alt="portfolio-image">
                     <div class="hover-content">
                         <div>
-                            <a href="#" class="button">View Case Study</a>
+                            <a href="#" class="button">Paso 2: Ver Menú y ordenar</a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-content">
-                    <a href="#"><h3>The Back Chiropractor</h3></a>
-                    <span>Ceramics, Design</span>
+                    <a href="#"><h3>Toma asiento en una mesa libre</h3></a>
+                    <span>ya estás listo para ordenar</span>
                 </div>
             </div>
         </div>
@@ -257,88 +221,35 @@
                     <img src="assets/img/portfolio3.jpg" alt="portfolio-image">
                     <div class="hover-content">
                         <div>
-                            <a href="#" class="button">View Case Study</a>
+                            <a href="#" class="button">Paso 3: Tu comida está lista</a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-content">
-                    <a href="#"><h3>The Back Chiropractor</h3></a>
-                    <span>Ceramics, Design</span>
+                    <a href="#"><h3>Recibirás información sobre tu pedido</h3></a>
+                    <span>notificaciones desde la cocina en tiempo real</span>
                 </div>
             </div>
         </div>
-        <div class="single-portfolio col-md-4">
-            <div class="inner">
-                <div class="portfolio-img">
-                    <img src="assets/img/portfolio4.jpg" alt="portfolio-image">
-                    <div class="hover-content">
-                        <div>
-                            <a href="#" class="button">View Case Study</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-content">
-                    <a href="#"><h3>The Back Chiropractor</h3></a>
-                    <span>Ceramics, Design</span>
-                </div>
-            </div>
-        </div>
-        <div class="single-portfolio col-md-4">
-            <div class="inner">
-                <div class="portfolio-img">
-                    <img src="assets/img/portfolio5.jpg" alt="portfolio-image">
-                    <div class="hover-content">
-                        <div>
-                            <a href="#" class="button">View Case Study</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-content">
-                    <a href="#"><h3>The Back Chiropractor</h3></a>
-                    <span>Ceramics, Design</span>
-                </div>
-            </div>
-        </div>
-        <div class="single-portfolio col-md-4">
-            <div class="inner">
-                <div class="portfolio-img">
-                    <img src="assets/img/portfolio6.jpg" alt="portfolio-image">
-                    <div class="hover-content">
-                        <div>
-                            <a href="#" class="button">View Case Study</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-content">
-                    <a href="#"><h3>The Back Chiropractor</h3></a>
-                    <span>Ceramics, Design</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 text-center" data-margin="40px 0 0">
-            <a href="#" class="button">More Works</a>
-        </div>
-    </div>
+        
 </div>
 </div><div class="testimonial-area sp bg1">
 <div class="container">
     <div class="section-title white">
-        <h2>Clients Review</h2>
+        <h2>Opiniones de nuestros usuarios</h2>
         <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
     </div>
     <div class="testimonial-slider">
         <div class="single-slide">
             <div class="inner">
-                <p>When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video official.</p>
+                <p>El futuro de los restaurantes, ofrece una experiencia única para tu negocio a un precio muy accesible</p>
                 <div class="client-info">
                     <div class="client-img">
                         <img src="assets/img/client.jpg" alt="client">
                     </div>
                     <div class="client-data">
-                        <h4>Jhon Doe</h4>
-                        <span>Designer</span>
+                        <h4>Alejandro Coronado</h4>
+                        <span>CEO Banco Paga Todo</span>
                     </div>
                 </div>
             </div>
@@ -390,34 +301,34 @@
 </div><div class="faq-area sp bg2">
 <div class="container">
     <div class="section-title">
-        <h2>Frequently Asked Questions</h2>
-        <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+        <h2>Preguntas Frecuentes</h2>
+        <p>¿Tienes más dudas? <a href="mailto:contacto@waitqrapp.com">Contáctanos</a></p>
     </div>
     <div class="row">
         <div class="col-md-6">
             <div class="faq">
                 <div class="single-item">
-                    <h4>Low Cost Advertising Available or Not?</h4>
+                    <h4>Necesito adaptar este servicio a mi restaurante, ¿es posible?</h4>
                     <div class="content">
-                        Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.
+                        Claro que es posible, con la ayuda de nuestros asesores expertos, te ofrecemos una experiencia a la medida de tus necesidades.
                     </div>
                 </div>
                 <div class="single-item">
-                    <h4>What Is The Big R For Marketing Your Business?</h4>
+                    <h4>¿Puedo adquirir solo una parte del servicio? </h4>
                     <div class="content">
-                        Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.
+                        Si, ofrecemos distintos niveles de acuerdo a las necesidades de tu negocio, <a href="mailto:contacto@waitqrapp.com">Contáctanos</a> para más información
                     </div>
                 </div>
                 <div class="single-item">
-                    <h4>Does Using Banner Stands Increase Trade Show Traffic?</h4>
+                    <h4>¿Cuales son sus costos?</h4>
                     <div class="content">
-                        Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.
+                        Ofrecemos precios accesibles de acuerdo a las necesidades de tu negocio, desde $999.00 anuales (iva incluido)
                     </div>
                 </div>
                 <div class="single-item">
-                    <h4>How To Write Better Advertising Copy?</h4>
+                    <h4>¿Qué los diferencía de los demás?</h4>
                     <div class="content">
-                        Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.
+                       Ofrecemos un diseño de experiencia libre de contacto para tu negocio, te damos todo lo necesario para que digitalices tu restaurante
                     </div>
                 </div>
             </div>
@@ -435,37 +346,35 @@
         <div class="row">
             <div class="col-md-6 col-lg-3 footer_widget">
                 <div class="inner">
-                    <h4>About</h4>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, antesenectus et netus et malesuada fames ac turpis egestas.</p>
+                    <h4>Quienes somos</h4>
+                    <p>Somos una start up mexicana que busca ofrecer un servicio integral a los restauranteros y comensales a través de una plataforma web</p>
+            
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 footer_widget">
                 <div class="inner">
-                    <h4>Company</h4>
+                    <h4>Conócenos</h4>
                     <ul>
-                        <li><a href="#">Company Overview</a></li>
-                        <li><a href="#">Meet The Team</a></li>
-                        <li><a href="#">Our Awesome Partners</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Frequently Asked Questions</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Javier Bonilla, CEO</a></li>
+                        <li><a href="#">Esteban Cortés Lozano, CTO</a></li>
+                        <li><a href="#">Únete al equipo</a></li>
+                        <li><a href="#">¿Quieres apoyarnos?</a></li>
+
                     </ul>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 footer_widget">
                 <div class="inner">
-                    <h4>Recent Posts</h4>
+                    <h4>Actualizaciones</h4>
                     <div class="media">
                         <a href="#">
                             <img src="assets/img/recent1.jpg" class="d-flex mr-3" alt="">
                         </a>
                         <div class="media-body">
                             <h5>
-                                <a href="#">Curling irons are as individual as the women</a>
+                                <a href="#">Desarrollo v1.0 por comenzar</a>
                             </h5>
-                            <span>June 22, 2017</span>
+                            <span>August 22, 2020</span>
                         </div>
                     </div>
                     <div class="media">
@@ -474,29 +383,19 @@
                         </a>
                         <div class="media-body">
                             <h5>
-                                <a href="#">Curling irons are as individual as the women</a>
+                                <a href="#">Diseño UX/UI terminado</a>
                             </h5>
-                            <span>June 22, 2017</span>
+                            <span>August 15, 2020</span>
                         </div>
                     </div>
-                    <div class="media">
-                        <a href="#">
-                            <img src="assets/img/recent3.jpg" class="d-flex mr-3" alt="">
-                        </a>
-                        <div class="media-body">
-                            <h5>
-                                <a href="#">Curling irons are as individual as the women</a>
-                            </h5>
-                            <span>June 22, 2017</span>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 footer_widget">
                 <div class="inner">
-                    <h4>Address</h4>
+                    <h4>Dirección</h4>
                     <h5>Flat Pro, Inc.</h5>
-                    <p>649 Folsom Ave, Suite 400 <br>San Francisco, CA 63105 <br>P: (123) 456-7890</p>
+                    <p>Calle 3 Picos 65 <br> Polanco V, Miguel Hidalgo, Ciudad de México, Mexico 11560<br>P: (55)6679 6004</p>
                     <h4>Newsletter</h4>
                     <form action="#" class="nw_form">
                         <input placeholder="Enter your email" type="email">
@@ -515,15 +414,7 @@
                     © 2017 Flat Pro. All Rights Reserved.
                 </div>
             </div>
-            <div class="col-lg-6 text-right">
-                <div class="footer-nav">
-                    <a href="#">Home</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Pages</a>
-                    <a href="#">Shortcode</a>
-                    <a href="#">Blog</a>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
